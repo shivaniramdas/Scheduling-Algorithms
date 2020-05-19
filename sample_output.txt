@@ -1,0 +1,58 @@
+shivani@shivani-ubuntu:~/Documents/OS$ bash menu.sh
+Enter 
+1 for FCFS 
+2 for Priority Scheduling
+3 for Round Robin Scheduling
+4 for Shortest Job First(Non-Pre-emptive)
+5 for for Shortest Job First(Pre-emptive)
+2
+Enter no. of processes:
+4
+Enter PID of all processes(Space Separated)
+A B C D
+Enter burst time of all processes(Space Separated)
+10 5 3 2
+Enter arrival time of all processes(Space Separated)
+0 1 3 4
+Enter priority of all processes, 0 being highest(Space Separated)
+2 1 4 3
+From T=0 to 10 : Process A
+From T=10 to 15 : Process B
+From T=15 to 17 : Process D
+From T=17 to 20 : Process C
+PID	Burst	Arrive	Start	Finish	Wait	TA
+A	10	0	0	10	0	10
+B	5	1	10	15	9	14
+C	3	3	17	20	14	17
+D	2	4	15	17	11	13
+Average Wait Time: 8.50000000000000000000
+Average TA Time: 13.50000000000000000000
+
+
+shivani@shivani-ubuntu:~/Documents/OS$ bash menu.sh
+Enter 
+1 for FCFS 
+2 for Priority Scheduling
+3 for Round Robin Scheduling
+4 for Shortest Job First(Non-Pre-emptive)
+5 for for Shortest Job First(Pre-emptive)
+4
+Enter no. of processes
+4
+Enter PID for all process, separated by spaces:
+A B C D
+Enter burst time for all process, separated by spaces:
+20 3 4 6
+Enter arrival time for all process, separated by spaces:
+0 2 5 1
+From T=0 to 20 : Process A
+From T=20 to 23 : Process B
+From T=23 to 27 : Process C
+From T=27 to 33 : Process D
+PID	Burst	Arrive	Start	Finish	Wait	TA
+A	20	0	0	20	0	20
+B	3	2	20	23	18	21
+C	4	5	23	27	18	22
+D	6	1	27	33	26	32
+Average Wait Time: 15.50000000000000000000
+Average TA Time: 23.75000000000000000000
